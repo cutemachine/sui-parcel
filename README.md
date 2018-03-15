@@ -1,6 +1,6 @@
 # SUI-Parcel
 
-Launch your own projects in no time with SUI-Parcel.
+Launch your own React projects in no time with SUI-Parcel.
 
 This is a basic React app which includes some [Semantic-UI React](https://react.semantic-ui.com/introduction) components.
 
