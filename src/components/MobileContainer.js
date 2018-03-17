@@ -37,11 +37,15 @@ class MobileContainer extends Component {
           </Sidebar>
 
           <Sidebar.Pusher dimmed={sidebarOpened} onClick={this.handlePusherClick} style={{ minHeight: '100vh' }}>
-            <Segment inverted textAlign='center' style={{ minHeight: 350, padding: '1em 0em' }} vertical>
+            <Segment inverted textAlign='center' style={{ backgroundColor: '#263749', minHeight: 350, padding: '1em 0em' }} vertical>
               <Container>
                 <Menu inverted pointing secondary size='large'>
                   <Menu.Item onClick={this.handleToggle}>
-                    <Icon name='sidebar' />
+                    <Button basic color='teal'>
+                      <Button.Content>
+                        <Icon name='sidebar' />
+                      </Button.Content>
+                    </Button>
                   </Menu.Item>
                   <Menu.Item position='right'>
                     <Button as={Link} href='https://github.com' primary style={{marginLeft: '0.5em'}}>
