@@ -31,10 +31,9 @@ class MobileContainer extends Component {
       <Responsive {...Responsive.onlyMobile}>
         <Sidebar.Pushable>
           <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
-            <Link className='item' to='/'>Home</Link>
-            <Link className='item' to='/commands'>Commands</Link>
-            <Link className='item' to='/components'>Components</Link>
-            <Link className='item' to='/github'>GitHub</Link>
+            <Menu.Item as={Link} name='home' to='/'>Home</Menu.Item>
+            <Menu.Item as={Link} name='components' to='/components'>Components</Menu.Item>
+            <Menu.Item as={Link} name='github' href='https://github.com'>Github</Menu.Item>
           </Sidebar>
 
           <Sidebar.Pusher dimmed={sidebarOpened} onClick={this.handlePusherClick} style={{ minHeight: '100vh' }}>
@@ -45,8 +44,9 @@ class MobileContainer extends Component {
                     <Icon name='sidebar' />
                   </Menu.Item>
                   <Menu.Item position='right'>
-                    <Button as='a' inverted>Log in</Button>
-                    <Button as='a' inverted style={{ marginLeft: '0.5em' }}>Sign Up</Button>
+                    <Button as={Link} href='https://github.com' primary style={{marginLeft: '0.5em'}}>
+                      <Icon name='github' /> GitHub
+                    </Button>
                   </Menu.Item>
                 </Menu>
               </Container>

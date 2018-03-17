@@ -36,11 +36,12 @@ class DesktopContainer extends Component {
             >
               <Container>
                 {/* TODO handle active <Menu.Item as='a' active>Home</Menu.Item> */}
-                <Link className='item' to='/'>Home</Link>
-                <Link className='item' to='/commands'>Commands</Link>
-                <Link className='item' to='/components'>Components</Link>
+                <Menu.Item as={Link} name='home' to='/'>Home</Menu.Item>
+                <Menu.Item as={Link} name='components' to='/components'>Components</Menu.Item>
                 <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}><Icon color='blue' name='github' /> GitHub</Button>
+                  <Button as={Link} href='https://github.com/cutemachine/sui-parcel' inverted={!fixed} primary={fixed} style={{marginLeft: '0.5em'}}>
+                    <Icon name='github' /> GitHub
+                  </Button>
                 </Menu.Item>
               </Container>
             </Menu>
