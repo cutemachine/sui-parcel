@@ -32,7 +32,7 @@ class MobileContainer extends Component {
         <Sidebar.Pushable>
           <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
             <Menu.Item as={Link} name='home' to='/'>Home</Menu.Item>
-            <Menu.Item as={Link} name='components' to='/components'>Components</Menu.Item>
+            <Menu.Item as={Link} name='page-2' to='/page-2'>Page 2</Menu.Item>
             <Menu.Item as={Link} name='github' href='https://github.com'>Github</Menu.Item>
           </Sidebar>
 

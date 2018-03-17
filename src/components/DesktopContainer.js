@@ -37,7 +37,7 @@ class DesktopContainer extends Component {
               <Container>
                 {/* TODO handle active <Menu.Item as='a' active>Home</Menu.Item> */}
                 <Menu.Item as={Link} name='home' to='/'>Home</Menu.Item>
-                <Menu.Item as={Link} name='components' to='/components'>Components</Menu.Item>
+                <Menu.Item as={Link} name='page-2' to='/page-2'>Page 2</Menu.Item>
                 <Menu.Item position='right'>
                   <Button as={Link} href='https://github.com/cutemachine/sui-parcel' inverted={!fixed} primary={fixed} style={{marginLeft: '0.5em'}}>
                     <Icon name='github' /> GitHub
