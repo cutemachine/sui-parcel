@@ -2,13 +2,15 @@
 import React from 'react'
 import {
   Button,
+  Icon,
   Container,
   Divider,
   Grid,
   Header,
-  Image,
-  Segment
+  Segment,
+  List
 } from 'semantic-ui-react'
+import { Link } from 'react-router'
 import ResponsiveContainer from '../components/ResponsiveContainer'
 import Footer from '../components/Footer'
 
@@ -18,28 +20,34 @@ const HomePage = () => (
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>We Help Companies and Companions</Header>
+            <Header as='h3' style={{ fontSize: '2em' }}>Extensive Components Collection</Header>
             <p style={{ fontSize: '1.33em' }}>
-              We can give your company superpowers to do things that they never thought possible. Let us delight
-              your customers and empower your needs... through pure data analytics.
-            </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>We Make Bananas That Can Dance</Header>
-            <p style={{ fontSize: '1.33em' }}>
-              Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
+              Semantic UI offers a great collection of various components: Button, Container, Divider, Flag, Header, Icon, Image, Input, Label, List, Loader, Rail, Reveal, Segment, Step …
+              The list goes on.
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image
-              bordered
-              rounded
-              size='large'
-              src='/assets/images/wireframe/white-image.png'
-            />
+            <Button style={{ marginBottom: '0.3em' }} color='red'>Red</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='orange'>Orange</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='yellow'>Yellow</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='olive'>Olive</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='green'>Green</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='teal'>Teal</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='blue'>Blue</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='violet'>Violet</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='purple'>Purple</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='pink'>Pink</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='brown'>Brown</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='grey'>Grey</Button>
+            <Button style={{ marginBottom: '0.3em' }} color='black'>Black</Button>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
+            <Button size='huge' as={Link} name='components' href='https://react.semantic-ui.com/introduction'>
+              Components
+              <Icon name='right arrow' />
+            </Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -48,16 +56,13 @@ const HomePage = () => (
     <Segment style={{ padding: '0em' }} vertical>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>"What a Company"</Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
+          <Grid.Column style={{ paddingBottom: '5em', backgroundColor: '#5FBAB2', color: 'white', paddingTop: '5em' }}>
+            <Header as='h3' style={{ fontSize: '2em', color: 'white' }}>Semantic UI</Header>
+            <p style={{ fontSize: '1.33em' }}>The official Semantic-UI-React integration</p>
           </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>"I shouldn't have gone with their competitor."</Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/assets/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
+          <Grid.Column style={{ paddingBottom: '5em', backgroundColor: '#263749', color: 'white', paddingTop: '5em' }}>
+            <Header as='h3' style={{ fontSize: '2em', color: 'white' }}>Parcel</Header>
+            <p style={{ fontSize: '1.33em' }}>Blazing fast, zero configuration web application bundler</p>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -65,13 +70,29 @@ const HomePage = () => (
 
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
-        <Header as='h3' style={{ fontSize: '2em' }}>Breaking The Grid, Grabs Your Attention</Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the art of doing
-          nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic
-          and worth your attention.
-        </p>
-        <Button as='a' size='large'>Read More</Button>
+        <Header as='h3' style={{ fontSize: '2em' }}>Technologies Used</Header>
+        <List animated verticalAlign='middle' size='big'>
+          <List.Item>
+            <List.Content>
+              Babel—Next generation JavaScript
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Content>
+              React—A JavaScript library for building user interfaces
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Content>
+              Semantic-UI React—The official Semantic-UI-React integration
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Content>
+              Parcel—Blazing fast, zero configuration web application bundler
+            </List.Content>
+          </List.Item>
+        </List>
 
         <Divider
           as='h4'
@@ -79,16 +100,18 @@ const HomePage = () => (
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a href='#'>Case Studies</a>
+          <a href='#'>Make it your own</a>
         </Divider>
 
-        <Header as='h3' style={{ fontSize: '2em' }}>Did We Tell You About Our Bananas?</Header>
+        <Header as='h3' style={{ fontSize: '2em' }}>Getting Started</Header>
         <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but it's really
-          true.
-          It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
+          Just clone the project. Remove the old Git history.
+          Then install the dependencies with <code>yarn</code>.
+          When the installation has finished you can run the new app with <code>yarn start</code>.
         </p>
-        <Button as='a' size='large'>I'm Still Quite Interested</Button>
+        <Button as={Link} href='https://github.com/cutemachine/sui-parcel' size='large'>
+          <Icon name='github' /> GitHub
+        </Button>
       </Container>
     </Segment>
     <Footer />
