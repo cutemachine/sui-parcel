@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import 'semantic-ui-css/semantic.min.css'
+import '../semantic-ui/semantic.flat.min.css'
 // TODO Add css-themes from https://github.com/semantic-ui-forest/forest-themes-css/tree/master/dist/semantic-ui
 
 // eslint-dable-next-line no-undef

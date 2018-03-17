@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Router, Route, browserHistory } from 'react-router'
 import HomePage from './pages/HomePage'
-import CommandsPage from './pages/CommandsPage'
 import SecondPage from './pages/SecondPage'
 
 export default class App extends Component {
@@ -10,7 +9,6 @@ export default class App extends Component {
       <Router history={browserHistory}>
         <Route>
           <Route path='/' component={HomePage} />
-          <Route path='/commands' component={CommandsPage} />
           <Route path='/page-2' component={SecondPage} />
         </Route>
       </Router>

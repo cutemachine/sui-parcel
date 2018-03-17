@@ -92,6 +92,11 @@ const HomePage = () => (
               Parcel—Blazing fast, zero configuration web application bundler
             </List.Content>
           </List.Item>
+          <List.Item>
+            <List.Content>
+              Semantic-UI-Forest—Collection of themes for Semantic-UI
+            </List.Content>
+          </List.Item>
         </List>
 
         <Divider

@@ -11,6 +11,7 @@ This is a basic React app which includes some [Semantic-UI React](https://react.
 - [React—A JavaScript library for building user interfaces](https://reactjs.org/)
 - [Semantic-UI React—The official Semantic-UI-React integration](https://react.semantic-ui.com/introduction)
 - [Parcel—Blazing fast, zero configuration web application bundler](https://parceljs.org)
+- [Semantic-UI-Forest—Collection of design, themes and templates for Semantic-UI](http://semantic-ui-forest.com/)
 
 
 ## Getting Started
