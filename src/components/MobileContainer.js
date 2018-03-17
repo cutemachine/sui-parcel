@@ -28,7 +28,7 @@ class MobileContainer extends Component {
     const { sidebarOpened } = this.state
 
     return (
-      <Responsive {...Responsive.onlyMobile}>
+      <Responsive maxWidth={991}>
         <Sidebar.Pushable>
           <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
             <Menu.Item as={Link} name='home' to='/'>Home</Menu.Item>
