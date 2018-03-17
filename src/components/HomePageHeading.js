@@ -1,11 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Link } from 'react-router'
 import {
-  Button,
   Container,
-  Header,
-  Icon
+  Header
 } from 'semantic-ui-react'
 
 const HomePageHeading = ({ mobile }) => (
@@ -31,10 +28,6 @@ const HomePageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em'
       }}
     />
-    <Button primary size='huge' as={Link} name='components' to='/components'>
-      Components
-      <Icon name='right arrow' />
-    </Button>
   </Container>
 )
 
