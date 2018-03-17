@@ -36,7 +36,7 @@ You can build the project with the `parcel` command. You can also use the NPM sc
 
 ## Demo
 
-[Check out the live demo of SUI-Parcel.]()
+[Check out the live demo of SUI-Parcel.](http://sad-brahmagupta-1f14a4.netlify.com)
 
 
 ## How To Contribute
